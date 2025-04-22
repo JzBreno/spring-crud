@@ -22,6 +22,7 @@ public class CrudSpringApplication {
 			c.setNome("Angular com Spring");
 			c.setCategoria("FullStack");
 			courseRepository.save(c);
+			System.out.println("cardique");
 		};
 	}
 }
