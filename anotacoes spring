@@ -1,7 +1,3 @@
-Claro, aqui está a explicação sem emojis, de forma mais objetiva e direta:
-
----
-
 ### 1. Anotações de Inicialização e Configuração
 
 **@SpringBootApplication**
@@ -137,3 +133,9 @@ Outras anotações comuns de validação (da biblioteca `javax.validation.constr
 ---
 
 Se quiser, posso criar um exemplo com essas anotações funcionando em conjunto (ex: uma API REST com validação e banco de dados). Quer que eu monte um exemplo assim?
+
+anotacoes de atributos de banco
+@Name -> especifica a chave primaria
+@Column -> especifica a coluna
+    length -> especifica o tamanho da variavel
+    nullable -> especifica que nao pode ser nulo
