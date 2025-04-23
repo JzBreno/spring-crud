@@ -1,5 +1,6 @@
 package com.jzbreno.controller;
 
+import com.jzbreno.service.HelloWorldService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -7,9 +8,16 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/")
 public class HelloController {
 
-    @GetMapping
-    public String Hello(){
-        return "Hello World";
+    private HelloWorldService helloWorldService;
+
+    HelloController(HelloWorldService helloWorldService) {
+        this.helloWorldService = helloWorldService;
+    }
+
+    @GetMapping("/hello/{name}")
+    public String Hello(@PathVariable String name){
+
+        return helloWorldService.sayHello(name);
     }
 
 }
